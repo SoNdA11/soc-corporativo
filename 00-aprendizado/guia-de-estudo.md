@@ -152,7 +152,7 @@ soc-corporativo/               ← Raiz do projeto
 ├── 00-aprendizado/            → Entender a ferramenta e conceitos
 ├── 01-arquitetura/            → Entender o projeto
 ├── 02-setup/                  → Montar o ambiente
-├── 03-configuração/           → Arquivos de configuração
+├── 03-configuracao/           → Arquivos de configuração
 ├── 04-operação/               → Executar e verificar
 ├── 05-resultados/             → Entregas e evidências
 └── 06-apresentacao/           → Apresentar o projeto

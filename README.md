@@ -181,7 +181,7 @@ O script [`ataques-opcao5.sh`](04-operacao/ataques-opcao5.sh) automatiza as 5 fa
 No Kali Linux:
 
 ```bash
-bash /home/paulo/Code/soc-corporativo/04-operacao/ataques-opcao5.sh
+bash ~/Code/soc-corporativo/04-operacao/ataques-opcao5.sh
 ```
 
 Acompanhe os alertas em tempo real no Wazuh Dashboard:

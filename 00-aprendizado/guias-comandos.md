@@ -298,7 +298,7 @@ tail -f /var/log/soc-corporativo/soc-journal.log
 
 ```bash
 # Do diretório do projeto para o manager
-docker cp ~/Code/new-project/soc-corporativo/03-configuração/local_rules.xml \
+docker cp ~/Code/soc-corporativo/03-configuracao/local_rules.xml \
   wazuh-manager:/var/ossec/etc/rules/local_rules.xml
 
 # Ajustar permissão
@@ -424,7 +424,7 @@ sudo apt update && sudo apt install -y nmap hydra sqlmap curl
 Se preferir, execute o script único que faz tudo:
 
 ```bash
-cd ~/Code/new-project/soc-corporativo
+cd ~/Code/soc-corporativo
 bash 02-setup/setup-opcao5.sh
 ```
 
@@ -751,7 +751,7 @@ Ordenar por **timestamp** e observar a sequência:
 ### 7.1. Script de Healthcheck
 
 ```bash
-cd ~/Code/new-project/soc-corporativo
+cd ~/Code/soc-corporativo
 bash 04-operação/healthcheck.sh
 ```
 
@@ -824,7 +824,7 @@ logger "BACKUP_EXECUTADO: RPO checkpoint"
 ### 8.1. PDF com Pandoc
 
 ```bash
-cd ~/Code/new-project/soc-corporativo
+cd ~/Code/soc-corporativo
 make pdf          # Gera todos os PDFs
 make pdf-relatorio  # Só relatório acadêmico
 make pdf-lgpd       # Só relatório LGPD
@@ -844,7 +844,7 @@ sudo apt install pandoc texlive-xetex texlive-lang-portuguese
 ### 8.2. Gerar Slides da Apresentação
 
 ```bash
-cd ~/Code/new-project/soc-corporativo
+cd ~/Code/soc-corporativo
 pip install fpdf2
 python 06-apresentacao/gerar-apresentacao.py
 ```
@@ -974,7 +974,7 @@ soc-corporativo/
 ├── 00-aprendizado/          # Guia de estudo do Wazuh
 ├── 01-arquitetura/          # Topologia e diagrama de rede
 ├── 02-setup/                # Scripts de setup
-├── 03-configuração/         # Regras, agente, logrotate
+├── 03-configuracao/         # Regras, agente, logrotate
 ├── 04-operação/             # Ataques e healthcheck
 ├── 05-resultados/           # Relatórios e prints
 ├── 06-apresentacao/         # Slides e roteiro

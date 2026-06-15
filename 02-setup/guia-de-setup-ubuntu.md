@@ -117,7 +117,7 @@ sudo ip link set vboxnet0 up
 ### 2.1 Clonar repositório
 
 ```bash
-cd ~/Code/new-project
+cd ~/Code
 git clone https://github.com/wazuh/wazuh-docker.git -b 4.9.0
 cd wazuh-docker/single-node
 ```
@@ -362,7 +362,7 @@ sudo systemctl status wazuh-agent
 ### 5.6 Configurar log rotation (opcional)
 
 ```bash
-sudo cp ~/Code/new-project/soc-corporativo/03-configuração/logrotate-soc.conf /etc/logrotate.d/soc-corporativo
+sudo cp ~/Code/soc-corporativo/03-configuracao/logrotate-soc.conf /etc/logrotate.d/soc-corporativo
 ```
 
 ### 5.7 Aceitar agente no Wazuh Manager
@@ -379,7 +379,7 @@ docker exec -it wazuh-manager /var/ossec/bin/agent_control -a -i <ID>
 ### 6.1 Copiar regras customizadas para o container
 
 ```bash
-docker cp ~/Code/new-project/soc-corporativo/03-configuração/local_rules.xml \
+docker cp ~/Code/soc-corporativo/03-configuracao/local_rules.xml \
   wazuh-manager:/var/ossec/etc/rules/local_rules.xml
 
 docker exec wazuh-manager chown ossec:ossec /var/ossec/etc/rules/local_rules.xml
@@ -515,14 +515,14 @@ docker exec wazuh-manager /var/ossec/bin/agent_control -l
 ### 8.4 Verificar saúde do ambiente
 
 ```bash
-bash ~/Code/new-project/soc-corporativo/04-operação/healthcheck.sh
+bash ~/Code/soc-corporativo/04-operação/healthcheck.sh
 ```
 
 ### 8.5 Executar script de ataques (opcional)
 
 ```bash
 # No Kali:
-bash /home/paulo/Code/new-project/soc-corporativo/04-operação/ataques-opcao5.sh
+bash ~/Code/soc-corporativo/04-operacao/ataques-opcao5.sh
 ```
 
 ---

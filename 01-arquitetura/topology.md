@@ -51,6 +51,7 @@ graph TB
 ## Mapeamento de Dependências
 
 ### Wazuh Docker (clonado do upstream)
+
 ```
 wazuh-docker/
 └── single-node/
@@ -64,12 +65,13 @@ wazuh-docker/
 ```
 
 ### Soc Corporativo (neste repositório)
+
 ```
 soc-corporativo/
 ├── 00-aprendizado/              → Entender a ferramenta e conceitos
 ├── 01-arquitetura/              → Diagramas e topologia
 ├── 02-setup/                    → Scripts e guias de instalação
-├── 03-configuração/             → Regras Wazuh e configs do agente
+├── 03-configuracao/             → Regras Wazuh e configs do agente
 ├── 04-operação/                 → Scripts de ataque e healthcheck
 ├── 05-resultados/               → Relatorios, dashboards e prints
 └── 06-apresentacao/             → Slides e roteiro
@@ -78,6 +80,7 @@ soc-corporativo/
 ## Fluxo de Dados
 
 ### Coleta de Logs
+
 ```mermaid
 graph LR
     A[Kali: Atacante] -->|ataques SSH/HTTP| B[Host: Logs do sistema]
@@ -87,6 +90,7 @@ graph LR
 ```
 
 ### Pipeline de Detecção
+
 ```mermaid
 graph LR
     subgraph PIPELINE["Pipeline de Detecção"]
@@ -100,6 +104,7 @@ graph LR
 ```
 
 ### Fluxo de Ataque e Recuperacao
+
 ```mermaid
 graph TB
     subgraph FASES["Fluxo de Ataque e Recuperação"]

@@ -140,7 +140,7 @@ source ~/.bashrc
 mkdir -p ~/Code
 cd ~/Code
 git clone https://github.com/wazuh/wazuh-docker.git -b 4.9.0
-# O repositório soc-corporativo deve estar em ~/Code/new-project/soc-corporativo/
+# O repositório soc-corporativo deve estar em ~/Code/soc-corporativo/
 # (copie ou clone conforme necessário)
 ```
 
