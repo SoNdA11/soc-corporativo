@@ -1,0 +1,23 @@
+*.pdf
+*.swp
+*.swo
+.DS_Store
+__pycache__/
+.direnv/
+.env
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.lof
+*.lot
+
+# Stale development artifacts
+wazuh-config/
